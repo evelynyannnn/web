@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resource Guide: Understanding Alcohol Use Disorder (AUD)</title>
+    <script>
+        function translateContent(language) {
+            const translations = {
+                "en": `Educational Resource Guide: Understanding Alcohol Use Disorder (AUD) & Health Promotion
+                <h2>Introduction</h2>
+                <p>This guide is designed to empower individuals with Alcohol Use Disorder (AUD) by providing essential knowledge...</p>`,
+                "es": `Guía de Recursos Educativos: Comprender el Trastorno por Consumo de Alcohol (AUD) y la Promoción de la Salud
+                <h2>Introducción</h2>
+                <p>Esta guía está diseñada para empoderar a las personas con Trastorno por Consumo de Alcohol (AUD)...</p>`,
+                "zh": `教育资源指南：了解酒精使用障碍（AUD）和健康促进
+                <h2>介绍</h2>
+                <p>本指南旨在为患有酒精使用障碍（AUD）的人提供必要的知识...</p>`
+            };
+            document.getElementById("content").innerHTML = translations[language] || translations["en"];
+        }
+    </script>
+</head>
+<body>
+    <h1>Understanding Alcohol Use Disorder (AUD) & Health Promotion</h1>
+    <label for="language">Select Language: </label>
+    <select id="language" onchange="translateContent(this.value)">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="zh">中文</option>
+    </select>
+    <div id="content">
+        <h2>Introduction</h2>
+        <p>This guide is designed to empower individuals with Alcohol Use Disorder (AUD) by providing essential knowledge...</p>
+    </div>
+</body>
+</html>
